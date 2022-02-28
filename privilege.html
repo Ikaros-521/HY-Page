@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>火羽</title>
+  <link rel="stylesheet" href="layui/css/layui.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div>
+  <ul class="layui-nav" lay-filter="">
+    <li class="layui-nav-item"><a href="index.html">首页</a></li>
+    <li class="layui-nav-item"><a href="https://space.bilibili.com/2094031249/" target="_blank">B站主页</a></li>
+    <li class="layui-nav-item"><a href="qqGroup.html">QQ群</a></li>
+    <li class="layui-nav-item"><a href="emoticon.html">表情包</a></li>
+    <li class="layui-nav-item"><a href="information.html">特殊情报</a></li>
+    <li class="layui-nav-item layui-this"><a href="">特典</a></li>
+    <li class="layui-nav-item"><a href="about.html">关于</a></li>
+    <li class="layui-nav-item">
+      <a href="javascript:;">language</a>
+      <dl class="layui-nav-child"> <!-- 二级菜单 -->
+        <dd><a href="">中文</a></dd>
+        <dd><a href="">日本語</a></dd>
+        <dd><a href="">EN</a></dd>
+      </dl>
+    </li>
+  </ul>
+</div>
+<div>
+
+</div>
+<div class="layui-container">
+    <div class="layui-container">
+        <p>上舰后方可得到大小姐亲笔签名插画特典~</p>
+        <img src="img/group/captain.png">
+    </div>
+</div>
+
+</body>
+<!-- 引入 layui.js 的 <script> 标签最好放置在 html 末尾 -->
+<script src="layui/layui.js"></script>
+<script>
+layui.use(function(){
+  var layer = layui.layer
+  ,form = layui.form
+  ,laypage = layui.laypage
+  ,element = layui.element
+  ,laydate = layui.laydate
+  ,util = layui.util;
+  
+});
+</script>
+</html>
