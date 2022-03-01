@@ -2,24 +2,38 @@
 // 数据变量
 var video_data = [
     {
-        "up" : "火羽ひのめ",
-        "title" : "在B站每天直播的日v500舰的瞬间",
-        "src" : "//player.bilibili.com/player.html?aid=211786038&bvid=BV1Ra411C7Ho&cid=517379940&page=1"
+        "up" : "妖刀影崩",
+        "title" : "火羽情人节表白大会/火羽のバレンタインの告白会",
+        "src" : "//player.bilibili.com/player.html?aid=551550007&bvid=BV1Ui4y1f7vq&cid=508011227&page=1"
     },
     {
-        "up" : "火羽ひのめ",
-        "title" : "在B站每天直播的日v500舰的瞬间",
-        "src" : "//player.bilibili.com/player.html?aid=211786038&bvid=BV1Ra411C7Ho&cid=517379940&page=1"
+        "up" : "妖刀影崩",
+        "title" : "HYDRA 情人节整活翻唱/致火羽大小姐",
+        "src" : "//player.bilibili.com/player.html?aid=339070380&bvid=BV1pR4y1L7c8&cid=508434115&page=1"
+    },
+    {
+        "up" : "松一琉璃Official",
+        "title" : "光遇弹琴，团子大家族（お嬢さん500艦記念おめでとう）",
+        "src" : "//player.bilibili.com/player.html?aid=979373182&bvid=BV1B44y1T7d8&cid=515626258&page=1"
+    },
+    {
+        "up" : "ひのめ单推人",
+        "title" : "想对大小姐说的话",
+        "src" : "//player.bilibili.com/player.html?aid=509456454&bvid=BV1Zu411D7oL&cid=518314545&page=1"
     }
 ];
 
 window.onload = function() {
-    var parent_div = document.getElementsByClassName("layui-row")[0];  
+    var parent_div = document.getElementsByClassName("layui-row")[0];
 
     for(var i = 0; i < video_data.length; i++) {
+        var num = randomNum(0, 16777215).toString(16);
+        var alpha = randomNum(0, 255).toString(16);
+
         var child_div1 = document.createElement("div");
         child_div1.className = "layui-col-md4";
         child_div1.id = i;
+        child_div1.style.background = "#" + num + alpha;
         child_div1.onclick = function() {
             show_video(this.id);
         };
@@ -35,6 +49,21 @@ window.onload = function() {
         parent_div.appendChild(child_div1);
     }
 }
+
+// 随机数 [minNum, maxNum]
+function randomNum(minNum, maxNum) { 
+    switch(arguments.length) { 
+        case 1: 
+            return parseInt(Math.random() * minNum + 1, 10); 
+            break; 
+        case 2: 
+            return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10); 
+            break; 
+        default: 
+            return 0; 
+        break; 
+    } 
+} 
 
 // 弹窗播放视频
 function show_video(index) {
