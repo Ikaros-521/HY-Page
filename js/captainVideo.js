@@ -1,3 +1,4 @@
+// 视频内嵌参考：https://blog.csdn.net/DSH964/article/details/80961598
 // 数据变量
 var video_data = [
     {
@@ -22,7 +23,6 @@ window.onload = function() {
         child_div1.onclick = function() {
             show_video(this.id);
         };
-        child_div1.style.cursor = "pointer";
 
         var child_div2 = document.createElement("div");
         var child_div3 = document.createElement("div");
