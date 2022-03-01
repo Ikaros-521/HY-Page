@@ -1,5 +1,10 @@
 div#carousel1 {
     height: 100%;
+    background-color: white;
+}
+
+.layui-carousel>[carousel-item]>* {
+    background-color: #ffffff;
 }
 
 div#info_div {

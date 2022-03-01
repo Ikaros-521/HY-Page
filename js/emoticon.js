@@ -1,7 +1,7 @@
 window.onload = function() {
 
 	imgLocation("container", "box");
-	var imgData = ["1.jpg","2.jpg","3.jpg","1.gif","2.gif","3.gif","1.png","2.png"];
+	var imgData = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","1.gif","2.gif","3.gif","1.png","2.png"];
 	window.onscroll = function() {
 		//  console.log(document.documentElement.scrollTop);
 		if (checkFlag()) {
