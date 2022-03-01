@@ -1,29 +1,53 @@
 window.onload = function() {
+	// var imgData = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg",
+    //     "11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg",
+    //     "21.jpg","22.jpg","23.jpg","24.jpg","25.jpg","26.jpg","27.jpg","28.jpg","29.jpg","30.jpg",
+    //     "1.gif","2.gif","3.gif","4.gif","5.gif","6.gif",
+    //     "1.png","2.png","3.png","4.png","5.png","6.png","7.png"];
 
-	imgLocation("container", "box");
-	var imgData = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","1.gif","2.gif","3.gif","1.png","2.png"];
-	window.onscroll = function() {
-		//  console.log(document.documentElement.scrollTop);
-		if (checkFlag()) {
-			var cparent = document.getElementById("container");
-			for (var i = 0; i < imgData.length; i++) {
-				var ccontent = document.createElement("div");
-				ccontent.className = "box";
-				cparent.appendChild(ccontent);
-				var boximg = document.createElement("div");
-				boximg.className = "box_img";
-				ccontent.appendChild(boximg);
-				var img = document.createElement("img");
-				img.src = "img/" + imgData[i];
-				boximg.appendChild(img);
+    // var cparent = document.getElementById("container");
+    // for (var i = 0; i < imgData.length; i++) {
+    //     var ccontent = document.createElement("div");
+    //     ccontent.className = "box";
+        
+    //     var boximg = document.createElement("div");
+    //     boximg.className = "box_img";
+        
+    //     var img = document.createElement("img");
+    //     img.src = "img/emoticon/" + imgData[i];
 
-				//另外一种方法在div后边追加内容，不覆盖原有内容
-				//    var content="<div class='box'><div class='box_img'><img src='img/"+imgData[i]+"'/></div></div>";
-				//    cparent.innerHTML+=content;
-			}
-			imgLocation("container", "box");
-		}
-	}
+    //     boximg.appendChild(img);
+    //     ccontent.appendChild(boximg);
+    //     cparent.appendChild(ccontent);
+    // }
+
+    imgLocation("container", "box");
+    
+	// window.onscroll = function() {
+	// 	//  console.log(document.documentElement.scrollTop);
+	// 	if (checkFlag()) {
+	// 		var cparent = document.getElementById("container");
+	// 		for (var i = 0; i < imgData.length; i++) {
+	// 			var ccontent = document.createElement("div");
+	// 			ccontent.className = "box";
+				
+	// 			var boximg = document.createElement("div");
+	// 			boximg.className = "box_img";
+				
+	// 			var img = document.createElement("img");
+	// 			img.src = "img/emoticon/" + imgData[i];
+
+	// 			boximg.appendChild(img);
+    //             ccontent.appendChild(boximg);
+    //             cparent.appendChild(ccontent);
+
+	// 			//另外一种方法在div后边追加内容，不覆盖原有内容
+	// 			//    var content="<div class='box'><div class='box_img'><img src='img/"+imgData[i]+"'/></div></div>";
+	// 			//    cparent.innerHTML+=content;
+	// 		}
+	// 		imgLocation("container", "box");
+	// 	}
+	// }
 }
 
 function checkFlag() {
