@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,46 +6,60 @@
   <title>火羽</title>
   <link rel="stylesheet" href="layui/css/layui.css">
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/emoticon.css">
 </head>
 <body>
-<div>
-  <ul class="layui-nav" lay-filter="">
-    <li class="layui-nav-item"><a href="index.html">首页</a></li>
-    <li class="layui-nav-item"><a href="https://space.bilibili.com/2094031249/" target="_blank">B站主页</a></li>
-    <li class="layui-nav-item"><a href="qqGroup.html">QQ群</a></li>
-    <li class="layui-nav-item layui-this"><a href="">表情包</a></li>
-    <li class="layui-nav-item"><a href="information.html">特殊情报</a></li>
-    <li class="layui-nav-item"><a href="privilege.html">特典</a></li>
-    <li class="layui-nav-item"><a href="about.html">关于</a></li>
-    <li class="layui-nav-item">
-      <a href="javascript:;">language</a>
-      <dl class="layui-nav-child"> <!-- 二级菜单 -->
-        <dd><a href="">中文</a></dd>
-        <dd><a href="">日本語</a></dd>
-        <dd><a href="">EN</a></dd>
-      </dl>
-    </li>
-  </ul>
-</div>
-<div>
 
-</div>
-  
-<div class="layui-container">
-  
-</div>
+  <div id="container">
+    <div class="box">
+      <div class="box_img">
+        <img src="img/emoticon/1.jpg" />
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+        <img src="img/emoticon/2.jpg" />
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+        <img src="img/emoticon/3.jpg" />
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+        <img src="img/emoticon/4.jpg" />
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+        <img src="img/emoticon/1.gif" />
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+        <img src="img/emoticon/2.gif" />
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+        <img src="img/emoticon/3.gif" />
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+        <img src="img/emoticon/1.png" />
+      </div>
+    </div>
+    <div class="box">
+      <div class="box_img">
+        <img src="img/emoticon/2.png" />
+      </div>
+    </div>
+  </div>
 </body>
+<script src="js/emoticon.js"></script>
 <!-- 引入 layui.js 的 <script> 标签最好放置在 html 末尾 -->
 <script src="layui/layui.js"></script>
-<script>
-layui.use(function(){
-  var layer = layui.layer
-  ,form = layui.form
-  ,laypage = layui.laypage
-  ,element = layui.element
-  ,laydate = layui.laydate
-  ,util = layui.util;
-  
-});
 </script>
 </html>

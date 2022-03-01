@@ -1,0 +1,29 @@
+div#carousel1 {
+    height: 100%;
+}
+
+div#info_div {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    z-index: 1;
+}
+
+div#bg_div {
+    position: absolute;
+    left: 10%;
+}
+
+p#name {
+    font-size: 40px;
+}
+
+p#introductionJP {
+    margin: 10px;
+    color: #616161;
+}
+
+p#introductionCN {
+    margin: 10px;
+    color: #616161;
+}

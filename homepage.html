@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>火羽</title>
+  <link rel="stylesheet" href="layui/css/layui.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+<div class="layui-carousel" id="carousel1">
+  <div carousel-item>
+    <div>
+      <div id="info_div">
+        <p id="name">火羽ひのめ</p>
+        <p id="introductionJP">初めまして！bilibiliだけで活動している日本人Vtuber。个人势！毎日22時から配信中！</span>
+        <p id="introductionCN">初次见面！只在bilibili活动的日本人Vtuber。个人势！每天22点开始配信中！</span>
+      </div>
+      <div id="bg_div">
+        <img src="img/grey.jpg">
+      </div>
+    </div>
+    <div>
+      <div id="info_div">
+        <p id="name">火羽ひのめ</p>
+        <p id="introductionJP">初めまして！bilibiliだけで活動している日本人Vtuber。个人势！毎日22時から配信中！</span>
+        <p id="introductionCN">初次见面！只在bilibili活动的日本人Vtuber。个人势！每天22点开始配信中！</span>
+      </div>
+      <div id="bg_div">
+        <img src="img/clothes1.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<!-- 引入 layui.js 的 <script> 标签最好放置在 html 末尾 -->
+<script src="layui/layui.js"></script>
+<script>
+layui.use('carousel', function(){
+  var carousel = layui.carousel;
+  //建造实例
+  carousel.render({
+    elem: '#carousel1'
+    ,width: '100%' //设置容器宽度
+    ,height: '100%'
+    ,arrow: 'always' //始终显示箭头
+    //,anim: 'updown' //切换动画方式
+  });
+});
+</script>
+</html>

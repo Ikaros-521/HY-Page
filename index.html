@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,11 +13,12 @@
   <ul class="layui-nav" lay-filter="">
     <li class="layui-nav-item layui-this"><a href="">首页</a></li>
     <li class="layui-nav-item"><a href="https://space.bilibili.com/2094031249/" target="_blank">B站主页</a></li>
-    <li class="layui-nav-item"><a href="qqGroup.html">QQ群</a></li>
-    <li class="layui-nav-item"><a href="emoticon.html">表情包</a></li>
-    <li class="layui-nav-item"><a href="information.html">特殊情报</a></li>
-    <li class="layui-nav-item"><a href="privilege.html">特典</a></li>
-    <li class="layui-nav-item"><a href="about.html">特典</a></li>
+    <li class="layui-nav-item"><a href="qqGroup.html" target="view_frame">QQ群</a></li>
+    <li class="layui-nav-item"><a href="emoticon.html" target="view_frame">表情包</a></li>
+    <li class="layui-nav-item"><a href="information.html" target="view_frame">特殊情报</a></li>
+    <li class="layui-nav-item"><a href="privilege.html" target="view_frame">特典</a></li>
+    <li class="layui-nav-item"><a href="groupQuotations.html" target="view_frame">群友经典语录</a></li>
+    <li class="layui-nav-item"><a href="about.html" target="view_frame">关于</a></li>
     <li class="layui-nav-item">
       <a href="javascript:;">language</a>
       <dl class="layui-nav-child"> <!-- 二级菜单 -->
@@ -29,44 +29,12 @@
     </li>
   </ul>
 </div>
-<div class="layui-carousel" id="carousel1">
-  <div carousel-item>
-    <div>
-      <div id="info_div">
-        <p id="name">火羽ひのめ</p>
-        <p id="introductionJP">初めまして！bilibiliだけで活動している日本人Vtuber。个人势！毎日22時から配信中！</span>
-        <p id="introductionCN">初次见面！只在bilibili活动的日本人Vtuber。个人势！每天22点开始配信中！</span>
-      </div>
-      <div id="bg_div">
-        <img src="img/grey.jpg">
-      </div>
-    </div>
-    <div>
-      <div id="info_div">
-        <p id="name">火羽ひのめ</p>
-        <p id="introductionJP">初めまして！bilibiliだけで活動している日本人Vtuber。个人势！毎日22時から配信中！</span>
-        <p id="introductionCN">初次见面！只在bilibili活动的日本人Vtuber。个人势！每天22点开始配信中！</span>
-      </div>
-      <div id="bg_div">
-        <img src="img/clothes1.jpg">
-      </div>
-    </div>
-  </div>
+<div id="iframe_div">
+  <iframe id="iframe1" src="homepage.html" name="view_frame"></iframe>
 </div>
 
 </body>
 <!-- 引入 layui.js 的 <script> 标签最好放置在 html 末尾 -->
 <script src="layui/layui.js"></script>
-<script>
-layui.use('carousel', function(){
-  var carousel = layui.carousel;
-  //建造实例
-  carousel.render({
-    elem: '#carousel1'
-    ,width: '100%' //设置容器宽度
-    ,arrow: 'always' //始终显示箭头
-    //,anim: 'updown' //切换动画方式
-  });
-});
 </script>
 </html>

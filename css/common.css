@@ -1,4 +1,9 @@
+html {
+    height: 100%;
+}
+
 body {
     overflow-x: hidden;
-    background: #bfbfbf;
+    height: 100%;
 }
+
