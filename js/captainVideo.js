@@ -25,6 +25,16 @@ var video_data = [
         "up" : "椰浆是耶酱",
         "title" : "【火羽ひのめ】500（？）艦おめでとう！！！",
         "src" : "//player.bilibili.com/player.html?aid=679493058&bvid=BV12S4y1g7xy&cid=518432184&page=1"
+    },
+    {
+        "up" : "大绅士_H君",
+        "title" : "【火羽一周年】《勾指起誓》一周年粉丝合唱",
+        "src" : "//player.bilibili.com/player.html?aid=508287706&bvid=BV1bu411m7JA&cid=487392763&page=1"
+    },
+    {
+        "up" : "妖刀影崩",
+        "title" : "妖刀影崩与直播间的诸君（お嬢様５００艦おめでとう！）",
+        "src" : "//player.bilibili.com/player.html?aid=679312023&bvid=BV1Mm4y1R78E&cid=518199665&page=1"
     }
 ];
 
