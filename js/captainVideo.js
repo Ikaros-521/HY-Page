@@ -20,6 +20,11 @@ var video_data = [
         "up" : "ひのめ单推人",
         "title" : "想对大小姐说的话",
         "src" : "//player.bilibili.com/player.html?aid=509456454&bvid=BV1Zu411D7oL&cid=518314545&page=1"
+    },
+    {
+        "up" : "椰浆是耶酱",
+        "title" : "【火羽ひのめ】500（？）艦おめでとう！！！",
+        "src" : "//player.bilibili.com/player.html?aid=679493058&bvid=BV12S4y1g7xy&cid=518432184&page=1"
     }
 ];
 
