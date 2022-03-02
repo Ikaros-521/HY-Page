@@ -1,7 +1,7 @@
 .video-btn {
 	position: absolute;
-	width: 1080px;
-	height: 500px;
+	width: 90%;
+    height: 80%;
 	background: black;
 	top: 50px;
 	left: 0px;
@@ -36,7 +36,7 @@ iframe {
 	position: absolute;
 	top: -15px;
 	right: -15px;
-
+	cursor: pointer;
 }
 
 #shadow {
