@@ -41,14 +41,18 @@ var video_data = [
 window.onload = function() {
     var parent_div = document.getElementsByClassName("layui-row")[0];
 
+    var arr = randomArr(video_data.length, 0, video_data.length);
+
     for(var i = 0; i < video_data.length; i++) {
-        var num = randomNum(0, 16777215).toString(16);
-        var alpha = randomNum(0, 255).toString(16);
+        var r = randomNum(0, 255 + 1);
+        var g = randomNum(0, 255 + 1);
+        var b = randomNum(0, 255 + 1);
+        var alpha = randomNum(0, 100 + 1);
 
         var child_div1 = document.createElement("div");
         child_div1.className = "layui-col-md4";
-        child_div1.id = i;
-        child_div1.style.background = "#" + num + alpha;
+        child_div1.id = arr[i];
+        child_div1.style.background = "rgba("+r+", "+g+", "+b+", "+(alpha / 100)+")";
         child_div1.onclick = function() {
             show_video(this.id);
         };
@@ -56,7 +60,7 @@ window.onload = function() {
         var child_div2 = document.createElement("div");
         var child_div3 = document.createElement("div");
         child_div3.className = "common_content_div";
-        child_div3.innerHTML = "UP主：" + video_data[i].up + "<br>视频名：" + video_data[i].title;
+        child_div3.innerHTML = "UP主：" + video_data[arr[i]].up + "<br>视频名：" + video_data[arr[i]].title;
         child_div3.style.padding = "30px";
 
         child_div2.appendChild(child_div3);
@@ -64,21 +68,6 @@ window.onload = function() {
         parent_div.appendChild(child_div1);
     }
 }
-
-// 随机数 [minNum, maxNum]
-function randomNum(minNum, maxNum) { 
-    switch(arguments.length) { 
-        case 1: 
-            return parseInt(Math.random() * minNum + 1, 10); 
-            break; 
-        case 2: 
-            return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10); 
-            break; 
-        default: 
-            return 0; 
-        break; 
-    } 
-} 
 
 // 弹窗播放视频
 function show_video(index) {
