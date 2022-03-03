@@ -28,9 +28,9 @@
     <li class="layui-nav-item">
       <a href="javascript:;">language</a>
       <dl class="layui-nav-child"> <!-- 二级菜单 -->
-        <dd><a href="">中文</a></dd>
-        <dd><a href="">日本語</a></dd>
-        <dd><a href="">EN</a></dd>
+        <dd><a href="javascript:;" onclick="language_change('ch')">中文</a></dd>
+        <dd><a href="javascript:;" onclick="language_change('jp')">日本語</a></dd>
+        <dd><a href="javascript:;" onclick="language_change('en')">EN</a></dd>
       </dl>
     </li>
   </ul>
@@ -40,6 +40,7 @@
 </div>
 
 </body>
+<script src="js/index.js"></script>
 <!-- 引入 layui.js 的 <script> 标签最好放置在 html 末尾 -->
 <script src="layui/layui.js"></script>
 </script>
