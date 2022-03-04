@@ -10,7 +10,25 @@
 </head>
 <body>
 
-<fieldset class="layui-elem-field">
+<ul class="layui-nav layui-nav-tree" lay-filter="test" id="right_nav">
+  <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+  <li class="layui-nav-item layui-nav-itemed">
+    <a href="javascript:;">目录</a>
+    <dl class="layui-nav-child">
+      <dd><a href="#pxqb">配信情报</a></dd>
+      <dd><a href="#cjwz">常见文字</a></dd>
+      <dd><a href="#swxg">食物相关</a></dd>
+      <dd><a href="#xhdsw">喜欢的事物</a></dd>
+      <dd><a href="#cyy">常用语</a></dd>
+      <dd><a href="#twxg">提问相关</a></dd>
+      <dd><a href="#zysx">注意事项</a></dd>
+      <dd><a href="#yxxg">游戏相关</a></dd>
+      <dd><a href="#jzxg">舰长相关</a></dd>
+    </dl>
+  </li>
+</ul>
+
+<fieldset class="layui-elem-field" id="pxqb">
   <legend>配信情报</legend>
   <div class="layui-field-box">
     <div class="layui-card">
@@ -72,7 +90,7 @@
   </div>
 </fieldset>
 
-<fieldset class="layui-elem-field">
+<fieldset class="layui-elem-field" id="cjwz">
   <legend>常见文字</legend>
   <div class="layui-field-box">
     <div class="layui-card">
@@ -126,7 +144,7 @@
   </div>
 </fieldset>
 
-<fieldset class="layui-elem-field">
+<fieldset class="layui-elem-field" id="swxg">
   <legend>食物相关</legend>
   <div class="layui-field-box">
     <div class="layui-card">
@@ -135,10 +153,16 @@
         大小姐不喜欢吃水果蛋糕，偏好于芝士、巧克力蛋糕
       </div>
     </div>
+    <div class="layui-card">
+      <div class="layui-card-header">素食</div>
+      <div class="layui-card-body">
+        大小姐不喜欢吃青椒，估计会讨厌蘑菇（没有特别喜欢的食物）
+      </div>
+    </div>
   </div>
 </fieldset>
 
-<fieldset class="layui-elem-field">
+<fieldset class="layui-elem-field" id="xhdsw">
   <legend>喜欢的事物</legend>
   <div class="layui-field-box">
     <div class="layui-card">
@@ -148,29 +172,34 @@
       </div>
     </div>
     <div class="layui-card">
-      <div class="layui-card-header">喜欢的卡通人物</div>
+      <div class="layui-card-header">卡通人物</div>
       <div class="layui-card-body">
         chiikawa（喝水时候的插画）
       </div>
     </div>
-    
+    <div class="layui-card">
+      <div class="layui-card-header">动物</div>
+      <div class="layui-card-body">
+        猫
+      </div>
+    </div>
   </div>
 </fieldset>
 
-<fieldset class="layui-elem-field">
+<fieldset class="layui-elem-field" id="cyy">
   <legend>常用语</legend>
   <div class="layui-field-box">
     <div class="layui-card">
       <div class="layui-card-header">Q群常用颜文字</div>
       <div class="layui-card-body">
         ( ⸍ɞ̴̶̷ ·̫ ɞ̴̶̷⸌ )<br>
-        (  ͡   ͜   ͡   )<br>
+        (&nbsp;  ͡  &nbsp; ͜  &nbsp; ͡   &nbsp;&nbsp;&nbsp;)<br>
       </div>
     </div>
   </div>
 </fieldset>
 
-<fieldset class="layui-elem-field">
+<fieldset class="layui-elem-field" id="twxg">
   <legend>提问相关</legend>
   <div class="layui-field-box">
     <div class="layui-card">
@@ -208,7 +237,7 @@
   </div>
 </fieldset>
 
-<fieldset class="layui-elem-field">
+<fieldset class="layui-elem-field" id="zysx">
   <legend>注意事项</legend>
   <div class="layui-field-box">
     <div class="layui-card">
@@ -219,10 +248,18 @@
         不喜欢NTR梗<br>
       </div>
     </div>
+    <div class="layui-card">
+      <div class="layui-card-header">不喜欢</div>
+      <div class="layui-card-body">
+        不想当妈妈，觉得生孩子很痛苦<br>
+        不喜欢被人叫妈妈<br>
+        不喜欢NTR梗<br>
+      </div>
+    </div>
   </div>
 </fieldset>
 
-<fieldset class="layui-elem-field">
+<fieldset class="layui-elem-field" id="yxxg">
   <legend>游戏相关</legend>
   <div class="layui-field-box">
     <div class="layui-card">
@@ -236,7 +273,7 @@
   </div>
 </fieldset>
 
-<fieldset class="layui-elem-field">
+<fieldset class="layui-elem-field" id="jzxg">
   <legend>舰长相关</legend>
   <div class="layui-field-box">
     <div class="layui-card">
@@ -279,10 +316,29 @@
   </div>
 </fieldset>
 
+<fieldset class="layui-elem-field" id="real_info" style="display: none;">
+  <legend>现实相关</legend>
+  <div class="layui-field-box">
+    <div class="layui-card">
+      <div class="layui-card-header">暂时隐藏</div>
+      <div class="layui-card-body">
+        高中去神社当过巫女（不过里面当权者的儿子是hentai，xsr）<br>
+        黑长直 b—cup 163cm<br>
+      </div>
+    </div>
+  </div>
+</fieldset>
+
 <div class="layui-container">
   
 </div>
 </body>
+<script>
+  // 现实情报显示 document.getElementById("iframe1").contentWindow.show_real()
+  function show_real() {
+    document.getElementById("real_info").style.display = "block";
+  }
+</script>
 <!-- 引入 layui.js 的 <script> 标签最好放置在 html 末尾 -->
 <script src="layui/layui.js"></script>
 </script>
