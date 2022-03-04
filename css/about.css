@@ -1,4 +1,9 @@
 p {
-    font-size: 22px;
+    font-size: 18px;
     padding: 10px;
+}
+
+.layui-container {
+    position: absolute;
+    top: 10%;
 }

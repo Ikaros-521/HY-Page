@@ -9,3 +9,8 @@ img {
     display: block;
     margin: auto;
 }
+
+p#p_explain {
+    font-size: 18px;
+    margin: 10px;
+}

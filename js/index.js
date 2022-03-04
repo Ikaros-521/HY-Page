@@ -1,5 +1,6 @@
 window.onload = function() {
     console.log("welcome");
+    sessionStorage.setItem("language", "ch");
 }
 
 // 语言切换
@@ -15,10 +16,20 @@ function language_change(language_val) {
         ["HomePage", "bilibili", "QQ Group", "Emoticon", "Information", "Privilege", "GroupQuotations", "CaptainVideo", "chiikawa", "About", "Language"],
     ];
 
-    if(language_val == "ch") language_index = 0;
-    else if(language_val == "jp") language_index = 1;
-    else if(language_val == "en") language_index = 2;
-    else language_index = 2;
+    if(language_val == "ch") {
+        language_index = 0;
+        sessionStorage.setItem("language", "ch");
+    } else if(language_val == "jp") {
+        language_index = 1;
+        sessionStorage.setItem("language", "jp");
+    } else if(language_val == "en") {
+        language_index = 2;
+        sessionStorage.setItem("language", "en");
+    } else {
+        language_index = 2;
+        sessionStorage.setItem("language", "en");
+    }
+
     for(var i = 0; i < len; i++) {
         a_tag[i].innerText = arr[language_index][i];
     }
