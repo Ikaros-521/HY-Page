@@ -19,3 +19,7 @@ fieldset {
     background: #6b6b6b;
     width: 150px;
 }
+
+.layui-card-body a {
+    text-decoration: underline;
+}
