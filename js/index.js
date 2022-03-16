@@ -11,9 +11,9 @@ function language_change(language_val) {
 
     // 中 日 英
     var arr = [
-        ["首页", "B站主页", "QQ群", "表情包", "特殊情报", "特典", "发病语录", "舰长视频", "chiikawa套图", "辅助程序", "关于", "Language"],
-        ["トップページ", "bilibili", "QQぐん", "表情パック", "じょうほう", "特典", "発症語録", "艦長ビデオ", "chiikawa", "ほじょプログラム", "について", "Language"],
-        ["HomePage", "bilibili", "QQ Group", "Emoticon", "Information", "Privilege", "GroupQuotations", "CaptainVideo", "chiikawa", "AuxiliaryProgram", "About", "Language"],
+        ["首页", "B站主页", "QQ群", "表情包", "特殊情报", "特典", "发病语录", "舰长视频", "直播封面", "chiikawa套图", "辅助程序", "关于", "Language"],
+        ["トップページ", "bilibili", "QQぐん", "表情パック", "じょうほう", "特典", "発症語録", "艦長ビデオ", "配信カバー枚", "chiikawa", "ほじょプログラム", "について", "Language"],
+        ["HomePage", "bilibili", "QQ Group", "Emoticon", "Information", "Privilege", "GroupQuotations", "CaptainVideo", "LiveCover", "chiikawa", "AuxiliaryProgram", "About", "Language"],
     ];
 
     if(language_val == "ch") {
