@@ -1,5 +1,5 @@
 #iframe_div {
-    height: 90%;
+    height: 93%;
     border: none;
 }
 
@@ -7,16 +7,4 @@ iframe#iframe1 {
     height: 100%;
     width: 100%;
     border: none;
-}
-
-#bottom {
-	position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: #777777;
-}
-
-#bottom a {
-    color: #777777;
 }

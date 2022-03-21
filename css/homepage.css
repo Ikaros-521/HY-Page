@@ -41,3 +41,19 @@ p#introductionCN {
     margin: 10px;
     color: #616161;
 }
+
+#bottom {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #777777;
+}
+
+#bottom a {
+    color: #777777;
+}
+
+div#carousel1 {
+    height: 95%;
+}
