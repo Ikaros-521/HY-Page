@@ -14,12 +14,12 @@ var video_data = [
     {
         "up" : "松一琉璃Official",
         "title" : "光遇弹琴，团子大家族（お嬢さん500艦記念おめでとう）",
-        "src" : "//player.bilibili.com/player.html?aid=979373182&bvid=BV1B44y1T7d8&cid=515626258&page=1"
+        "src" : "//player.bilibili.com/player.html?aid=509456454&bvid=BV1Zu411D7oL&cid=518314545&page=1"
     },
     {
         "up" : "ひのめ单推人",
         "title" : "想对大小姐说的话",
-        "src" : "//player.bilibili.com/player.html?aid=509456454&bvid=BV1Zu411D7oL&cid=518314545&page=1"
+        "src" : "//player.bilibili.com/player.html?aid=979373182&bvid=BV1B44y1T7d8&cid=515626258&page=1"
     },
     {
         "up" : "椰浆是耶酱",
